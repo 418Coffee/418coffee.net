@@ -12,9 +12,13 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.9.0",
     "framer-motion": "^6.3.0",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
     "next": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
