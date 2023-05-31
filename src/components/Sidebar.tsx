@@ -1,22 +1,23 @@
-import React, { ReactNode } from "react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import {
-  IconButton,
   Box,
+  BoxProps,
+  Link as CLink,
   CloseButton,
-  Flex,
-  Icon,
-  useColorModeValue,
   Drawer,
   DrawerContent,
-  Text,
-  useDisclosure,
-  BoxProps,
+  Flex,
   FlexProps,
+  Icon,
+  IconButton,
+  Text,
+  useColorModeValue,
+  useDisclosure,
 } from "@chakra-ui/react";
-
-import { useLocation, Link } from "react-router-dom";
-import { ReactText } from "react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { ReactNode, ReactText } from "react";
+import { IconType } from "react-icons";
+import { FiGithub, FiTwitter } from "react-icons/fi";
+import { Link, useLocation } from "react-router-dom";
 
 interface LinkItemProps {
   name: string;
@@ -27,6 +28,16 @@ const LinkItems: Array<LinkItemProps> = [
   { name: "past", href: "/past" },
   { name: "future", href: "/future" },
   { name: "contact", href: "/contact" },
+];
+
+interface FooterItemProps {
+  icon: IconType;
+  href: string;
+}
+
+const FooterItems: Array<FooterItemProps> = [
+  { icon: FiGithub, href: "https://github.com/418Coffee" },
+  { icon: FiTwitter, href: "https://twitter.com/kmattha" },
 ];
 
 export default function SimpleSidebar({ children }: { children: ReactNode }) {
@@ -84,13 +95,33 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         <Text fontSize="lg" fontWeight="medium">
           Matthijs Kessener
         </Text>
-        <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
+      <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       {LinkItems.map((link) => (
         <NavItem key={link.name} href={link.href}>
           {link.name}
         </NavItem>
       ))}
+      <Flex
+        width="100%"
+        position={"absolute"}
+        bottom="0"
+        justifyContent={"space-between"}
+        p="10"
+      >
+        {FooterItems.map((item) => (
+          <CLink href={item.href}>
+            <Icon
+              as={item.icon}
+              boxSize={9}
+              opacity={0.8}
+              _hover={{
+                opacity: 1,
+              }}
+            />
+          </CLink>
+        ))}
+      </Flex>
     </Box>
   );
 };
@@ -108,7 +139,7 @@ const NavItem = ({ children, href, ...rest }: NavItemProps) => {
       // _focus={{ boxShadow: "none" }}
     >
       <Flex
-        fontSize={"xl"}
+        fontSize={"md"}
         align="center"
         p="2"
         mx="6"
@@ -117,6 +148,7 @@ const NavItem = ({ children, href, ...rest }: NavItemProps) => {
         cursor="pointer"
         _hover={{
           color: "white",
+          opacity: pathname === href ? 1 : 0.7,
         }}
         color={pathname === href ? "white" : "grey"}
         {...rest}
