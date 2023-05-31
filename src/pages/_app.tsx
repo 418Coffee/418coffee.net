@@ -1,14 +1,22 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from "@chakra-ui/react";
+import { AppProps } from "next/app";
+import { useEffect, useState } from "react";
+import theme from "../theme";
 
-import theme from '../theme'
-import { AppProps } from 'next/app'
+function App({ Component, pageProps }: AppProps) {
+  const [isServer, setIsServer] = useState(true);
+  useEffect(() => {
+    setIsServer(false);
+  }, []);
+  if (isServer) return null;
 
-function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  )
+    <div suppressHydrationWarning>
+      <ChakraProvider theme={theme}>
+        {typeof window === "undefined" ? null : <Component {...pageProps} />}
+      </ChakraProvider>
+    </div>
+  );
 }
 
-export default MyApp
+export default App;
