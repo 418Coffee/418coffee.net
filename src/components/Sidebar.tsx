@@ -43,7 +43,7 @@ const FooterItems: Array<FooterItemProps> = [
 export default function SimpleSidebar({ children }: { children: ReactNode }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>
+    <Box minH="100vh" bg={"blackAlpha.700"}>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: "none", md: "block" }}
@@ -77,9 +77,9 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <Box
-      bg={useColorModeValue("white", "gray.900")}
+      bg={"blackAlpha.700"}
       borderRight="1px"
-      borderRightColor={useColorModeValue("gray.200", "gray.700")}
+      borderRightColor={"gray.700"}
       w={{ base: "full", md: 60 }}
       pos="fixed"
       h="full"
@@ -95,8 +95,8 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         <Text fontSize="lg" fontWeight="medium">
           Matthijs Kessener
         </Text>
+        <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       {LinkItems.map((link) => (
         <NavItem key={link.name} href={link.href}>
           {link.name}
@@ -133,11 +133,7 @@ interface NavItemProps extends FlexProps {
 const NavItem = ({ children, href, ...rest }: NavItemProps) => {
   const { pathname } = useLocation();
   return (
-    <Link
-      to={href}
-      style={{ textDecoration: "none" }}
-      // _focus={{ boxShadow: "none" }}
-    >
+    <Link to={href} style={{ textDecoration: "none" }}>
       <Flex
         fontSize={"md"}
         align="center"
@@ -169,9 +165,9 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       px={{ base: 4, md: 24 }}
       height="20"
       alignItems="center"
-      bg={useColorModeValue("white", "gray.900")}
+      bg={"blackAlpha.700"}
       borderBottomWidth="1px"
-      borderBottomColor={useColorModeValue("gray.200", "gray.700")}
+      borderBottomColor={"gray.700"}
       justifyContent="flex-start"
       {...rest}
     >
