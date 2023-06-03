@@ -12,11 +12,17 @@ const Contact = () => (
       <br />
       Discord: Arcturus#3828 <br />
       Twitter:{" "}
-      <Link color="purple.500" href="https://twitter.com/kmattha" isExternal>
+      <Link
+        target="_blank"
+        color="purple.500"
+        href="https://twitter.com/kmattha"
+        isExternal
+      >
         @kmattha
       </Link>{" "}
       or{" "}
       <Link
+        target="_blank"
         color="purple.500"
         href="https://twitter.com/messages/compose?recipient_id=2680090438"
         isExternal
@@ -32,6 +38,7 @@ const Contact = () => (
       <br />
       The source code for this website is available at{" "}
       <Link
+        target="_blank"
         color="purple.500"
         href="https://github.com/418Coffee/418coffee.net"
       >
