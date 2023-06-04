@@ -110,7 +110,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         p="10"
       >
         {FooterItems.map((item) => (
-          <CLink href={item.href}>
+          <CLink target="_blank" href={item.href}>
             <Icon
               as={item.icon}
               boxSize={9}
