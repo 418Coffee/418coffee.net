@@ -11,7 +11,6 @@ import {
   Icon,
   IconButton,
   Text,
-  useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import { ReactNode, ReactText } from "react";

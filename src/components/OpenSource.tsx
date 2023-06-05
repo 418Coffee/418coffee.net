@@ -1,15 +1,4 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  HStack,
-  Heading,
-  Icon,
-  Image,
-  Stack,
-  StackDivider,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Icon, Stack, StackDivider, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 const languages = {
