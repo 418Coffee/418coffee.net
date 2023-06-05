@@ -8,7 +8,8 @@ export default class Document extends NextDocument {
         <Head />
         <body>
           {/* Make Color mode to persists when you refresh the page. */}
-          <ColorModeScript />
+          {/* Must be literal: https://github.com/chakra-ui/chakra-ui/issues/6538 */}
+          <ColorModeScript initialColorMode={"dark"} />
           <Main />
           <NextScript />
         </body>
