@@ -101,7 +101,7 @@ const Past = () => (
       Open-source Projects
     </Heading>
     <Text mb="5">
-      Some notable open source project I made / contributed to.
+      Some notable open source projects I made / contributed to.
     </Text>
     <VStack spacing="4">
       {openSourceCards.map((card) => (
