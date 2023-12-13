@@ -12,7 +12,7 @@ const experienceCards: Array<ExperienceCardProps> = [
     role: "Founder & Developer",
     experience: `Solely built and managed all infrastructure of my private retail
     automation application. Mainly used to purchase hype sneakers
-    during 2020-2021 pandemic. Roughly €1,000,000 worth of items
+    during the 2020-2021 pandemic. Roughly €1,000,000 worth of items
     were bought using ARC AIO.`,
   },
   {
@@ -58,6 +58,19 @@ const openSourceCards: Array<OpenSourceCardProps> = [
       "A teapot implementing the Hyper Text Coffee Pot Control Protocol (HTCPCP) as per RFC 2324",
     language: "C++",
     href: "https://github.com/418Coffee/teapot",
+  },
+  {
+    name: "life",
+    description: "A minimal implementation of Conway's Game of Life",
+    language: "Go",
+    href: "https://github.com/418Coffee/life",
+  },
+  {
+    name: "caesar-salad",
+    description:
+      "A tool to automatically break shift ciphers using frequency analysis",
+    language: "V",
+    href: "https://github.com/418Coffee/ceaser-salad",
   },
   {
     contributed: true,
