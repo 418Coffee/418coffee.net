@@ -18,7 +18,7 @@ const Present = () => (
       attempt at doing so.
       <br />
       <br />I try to be as open-minded as possible and I try to relativize a lot
-      of aspects in life. I'm curious but not I try not to be naive. I like
+      of aspects in life. I'm curious, but I try not to be naive. I like
       learning, but I think it's also important to apply what you've learned. I
       like getting my hands dirty, but not without a goal.
     </Text>
