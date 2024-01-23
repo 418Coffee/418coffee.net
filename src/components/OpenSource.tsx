@@ -30,7 +30,7 @@ export default function OpenSourceCard({
         <Stack
           p="3"
           direction={["column", "row"]}
-          divider={<StackDivider borderColor="" />}
+          divider={<StackDivider />}
           shadow="base"
           borderWidth="1px"
           borderRadius={"xl"}
