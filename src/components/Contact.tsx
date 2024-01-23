@@ -1,7 +1,7 @@
 import { Box, Heading, Link, Text } from "@chakra-ui/react";
 
 const Contact = () => (
-  <Box p="5">
+  <Box p="5" color="white">
     <Heading as="h1" mb="5">
       Contact
     </Heading>

@@ -22,6 +22,7 @@ interface LinkItemProps {
   name: string;
   href: string;
 }
+
 const LinkItems: Array<LinkItemProps> = [
   { name: "present", href: "/" },
   { name: "past", href: "/past" },
@@ -82,6 +83,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       w={{ base: "full", md: 60 }}
       pos="fixed"
       h="full"
+      color={"white"}
       {...rest}
     >
       <Flex
@@ -97,7 +99,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem key={link.name} href={link.href}>
+        <NavItem key={link.name} href={link.href} onClick={onClose}>
           {link.name}
         </NavItem>
       ))}
@@ -128,11 +130,13 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 interface NavItemProps extends FlexProps {
   children: ReactText;
   href: string;
+  onClick: () => void;
 }
-const NavItem = ({ children, href, ...rest }: NavItemProps) => {
+
+const NavItem = ({ children, href, onClick, ...rest }: NavItemProps) => {
   const { pathname } = useLocation();
   return (
-    <Link to={href} style={{ textDecoration: "none" }}>
+    <Link to={href} style={{ textDecoration: "none" }} onClick={onClick}>
       <Flex
         fontSize={"md"}
         align="center"
@@ -168,6 +172,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       borderBottomWidth="1px"
       borderBottomColor={"gray.700"}
       justifyContent="flex-start"
+      color="white"
       {...rest}
     >
       <IconButton

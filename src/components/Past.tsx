@@ -90,7 +90,7 @@ const openSourceCards: Array<OpenSourceCardProps> = [
 ];
 
 const Past = () => (
-  <Box p="5">
+  <Box p="5" color="white">
     <Heading as="h1" mb="5">
       Past
     </Heading>

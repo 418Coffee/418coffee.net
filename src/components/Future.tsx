@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 
 const Future = () => (
-  <Box p="5">
+  <Box p="5" color="white">
     <Heading as="h2" mb="5">
       Future
     </Heading>
