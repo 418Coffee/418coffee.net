@@ -53,6 +53,13 @@ const openSourceCards: Array<OpenSourceCardProps> = [
     href: "https://github.com/418Coffee/celox",
   },
   {
+    name: "flux-template",
+    description:
+      "An opionated cluster agnostic Flux GitOps template repository",
+    language: "",
+    href: "https://github.com/418Coffee/flux-template",
+  },
+  {
     name: "teapot",
     description:
       "A teapot implementing the Hyper Text Coffee Pot Control Protocol (HTCPCP) as per RFC 2324",
@@ -91,13 +98,13 @@ const openSourceCards: Array<OpenSourceCardProps> = [
 
 const Past = () => (
   <Box p="5" color="white">
-    <Heading as="h1" mb="5">
+    <Heading as="h1" mb="2">
       Past
     </Heading>
     <Heading as="h2" mb="5" fontSize={"xl"}>
       Orginizations
     </Heading>
-    <Stack direction={["column", "row"]} spacing={"8"}>
+    <Stack direction={["column", "row"]} spacing={"8"} mb="5">
       {experienceCards.map((card) => (
         <ExperienceCard
           imageSrc={card.imageSrc}
@@ -114,7 +121,8 @@ const Past = () => (
       Open-source Projects
     </Heading>
     <Text mb="5">
-      Some notable open source projects I made / contributed to.
+      Non-exhaustive hand curated list of open source projects I made /
+      contributed to.
     </Text>
     <VStack spacing="4">
       {openSourceCards.map((card) => (

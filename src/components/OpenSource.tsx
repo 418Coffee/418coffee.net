@@ -53,15 +53,19 @@ export default function OpenSourceCard({
           </Text>
           <Text fontFamily={"mono"} w="25%">
             language
-            <Text fontFamily={"body"}>
-              <Icon viewBox="0 0 200 200" color={languages[language]}>
-                <path
-                  fill="currentColor"
-                  d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
-                />
-              </Icon>{" "}
-              {language}
-            </Text>
+            {language !== "" ? (
+              <Text fontFamily={"body"}>
+                <Icon viewBox="0 0 200 200" color={languages[language]}>
+                  <path
+                    fill="currentColor"
+                    d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+                  />
+                </Icon>{" "}
+                {language}
+              </Text>
+            ) : (
+              <Text fontFamily={"body"}>n/a</Text>
+            )}
           </Text>
           <Text fontFamily={"mono"} w="100%">
             description
