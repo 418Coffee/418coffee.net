@@ -8,7 +8,7 @@ const Present = () => (
     <Text maxW={"600px"}>
       To be brutally honest, I don't really like talking about I've done, what
       I'm doing and what I'm thinking of doing. I don't like confining myself to
-      categories when life is extremely dynamic. It is full of nuances and
+      categories when life is extremely dynamic. It's full of nuances and
       details which give it passion and meaning, but on the other hand no one
       needs to know that you fixed your neighbours fence yesterday.
       <br />
@@ -23,6 +23,14 @@ const Present = () => (
       like getting my hands dirty, but not without a goal.
     </Text>
     <Heading size="md" as="h2" mb="5" mt="5">
+      University
+    </Heading>
+    <Text maxW={"600px"}>
+      This year I started majoring in Computer Science. So far it's not been fun,
+      most of the lecturers appear to have zero didactic abilities. Coursework is heavy
+      and frequent. It's clear to me that I don't like university as tool to learn.
+    </Text>
+    <Heading size="md" as="h2" mb="5" mt="5">
       Clearflare
     </Heading>
     <Text maxW={"600px"}>
@@ -34,7 +42,7 @@ const Present = () => (
       over their online experience.
     </Text>
     <Heading size="md" as="h2" mb="5" mt="5">
-      ArcProxy
+      SunnyProxy
     </Heading>
     <Text maxW={"600px"}>
       I designed and developed scalable proxy servers and implemented clever
