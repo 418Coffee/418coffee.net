@@ -77,7 +77,7 @@ const openSourceCards: Array<OpenSourceCardProps> = [
     description:
       "A tool to automatically break shift ciphers using frequency analysis",
     language: "V",
-    href: "https://github.com/418Coffee/ceaser-salad",
+    href: "https://github.com/418Coffee/caesar-salad",
   },
   {
     contributed: true,
