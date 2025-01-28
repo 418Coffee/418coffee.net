@@ -10,8 +10,8 @@ const experienceCards: Array<ExperienceCardProps> = [
     description: "Retail Automation - Deeplink Generator",
     time: "2024-present",
     role: "Software Engineer",
-    experience: `Expanded distributed scrapers for scraping hundreds of millions of Amazon products and promo codes. 
-    Helped build a platform that connects influencers to merchants to generate direct Amazon affiliate deeplinks for their campaigns.`,
+    experience: `Expanded distributed scrapers for Amazon products and promo codes. 
+    Helped build a platform connecting influencers with merchants for automated Amazon affiliate deeplink generation.`,
   },
   {
     imageSrc:
@@ -114,7 +114,7 @@ const Past = () => (
     <Heading as="h2" mb="5" fontSize={"xl"}>
       Organizations
     </Heading>
-    <Stack direction={["column", "row"]} spacing={"8"} mb="5">
+    <Stack direction={["column", "column", "row"]} spacing={"8"} mb="5">
       {experienceCards.map((card) => (
         <ExperienceCard
           imageSrc={card.imageSrc}
