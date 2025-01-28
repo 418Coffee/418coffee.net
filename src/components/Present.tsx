@@ -6,7 +6,7 @@ const Present = () => (
       Present
     </Heading>
     <Text maxW={"600px"}>
-      To be brutally honest, I don't really like talking about I've done, what
+      To be brutally honest, I don't really like talking about what I've done, what
       I'm doing and what I'm thinking of doing. I don't like confining myself to
       categories when life is extremely dynamic. It's full of nuances and
       details which give it passion and meaning, but on the other hand no one
@@ -27,8 +27,9 @@ const Present = () => (
     </Heading>
     <Text maxW={"600px"}>
       This year I started majoring in Computer Science. So far it's not been fun,
-      most of the lecturers appear to have zero didactic abilities. Coursework is heavy
-      and frequent. It's clear to me that I don't like university as tool to learn.
+      most of the lecturers appear to have zero didactic abilities. Coursework is
+      heavy and frequent, often without any reasoning behind it. It's clear to
+      me that I don't like university as a tool to learn.
     </Text>
     <Heading size="md" as="h2" mb="5" mt="5">
       Clearflare
@@ -48,7 +49,7 @@ const Present = () => (
       I designed and developed scalable proxy servers and implemented clever
       management systems to handle proxy rotation and load balancing. By
       utilizing homelab servers, I successfully hosted the service, providing
-      reliable and efficient 4G proxies for various use cases.
+      reliable and efficient 4G proxies for various web scraping use cases.
     </Text>
   </Box>
 );

@@ -5,6 +5,16 @@ import OpenSourceCard, { OpenSourceCardProps } from "./OpenSource";
 const experienceCards: Array<ExperienceCardProps> = [
   {
     imageSrc:
+      "https://pbs.twimg.com/profile_images/1630762972946505729/Agl3Bnjx_400x400.jpg",
+    name: "FreebieFlow - Joylink",
+    description: "Retail Automation - Deeplink Generator",
+    time: "2024-present",
+    role: "Software Engineer",
+    experience: `Expanded distributed scrapers for scraping hundreds of millions of Amazon products and promo codes. 
+    Helped build a platform that connects influencers to merchants to generate direct Amazon affiliate deeplinks for their campaigns.`,
+  },
+  {
+    imageSrc:
       "https://cdn.discordapp.com/emojis/702616980598948016.webp?quality=lossless",
     name: "ARC AIO",
     description: "Retail Automation",
@@ -102,7 +112,7 @@ const Past = () => (
       Past
     </Heading>
     <Heading as="h2" mb="5" fontSize={"xl"}>
-      Orginizations
+      Organizations
     </Heading>
     <Stack direction={["column", "row"]} spacing={"8"} mb="5">
       {experienceCards.map((card) => (
