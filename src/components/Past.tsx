@@ -114,7 +114,7 @@ const Past = () => (
     <Heading as="h2" mb="5" fontSize={"xl"}>
       Organizations
     </Heading>
-    <Stack direction={["column", "column", "row"]} spacing={"8"} mb="5">
+    <Stack direction={["column", "column", "column", "row"]} spacing={"8"} mb="5">
       {experienceCards.map((card) => (
         <ExperienceCard
           imageSrc={card.imageSrc}
