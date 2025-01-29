@@ -6,12 +6,12 @@ const experienceCards: Array<ExperienceCardProps> = [
   {
     imageSrc:
       "https://pbs.twimg.com/profile_images/1630762972946505729/Agl3Bnjx_400x400.jpg",
-    name: "FreebieFlow - Joylink",
-    description: "Retail Automation - Deeplink Generator",
+    name: "FreebieFlow (Joylink)",
+    description: "Amazon Automation",
     time: "2024-present",
     role: "Software Engineer",
     experience: `Expanded distributed scrapers for Amazon products and promo codes. 
-    Helped build a platform connecting influencers with merchants for automated Amazon affiliate deeplink generation.`,
+    Helped build a platform connecting influencers with merchants for Amazon affiliate deeplink generation.`,
   },
   {
     imageSrc:
@@ -114,7 +114,11 @@ const Past = () => (
     <Heading as="h2" mb="5" fontSize={"xl"}>
       Organizations
     </Heading>
-    <Stack direction={["column", "column", "column", "row"]} spacing={"8"} mb="5">
+    <Stack
+      direction={["column", "column", "column", "row"]}
+      spacing={"8"}
+      mb="5"
+    >
       {experienceCards.map((card) => (
         <ExperienceCard
           imageSrc={card.imageSrc}
