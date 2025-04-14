@@ -8,7 +8,7 @@ const experienceCards: Array<ExperienceCardProps> = [
       "https://pbs.twimg.com/profile_images/1630762972946505729/Agl3Bnjx_400x400.jpg",
     name: "FreebieFlow (Joylink)",
     description: "Amazon Automation",
-    time: "2024-present",
+    time: "2024-2025",
     role: "Software Engineer",
     experience: `Expanded distributed scrapers for Amazon products and promo codes. 
     Helped build a platform connecting influencers with merchants for Amazon affiliate deeplink generation.`,
