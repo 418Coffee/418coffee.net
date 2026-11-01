@@ -1,0 +1,52 @@
+[
+  {
+    "name": "verceptron",
+    "description": "A perceptron written in V",
+    "language": "V",
+    "href": "https://github.com/418Coffee/verceptron"
+  },
+  {
+    "name": "celox",
+    "description": "An aiohttp-esque HTTP/1.1 client built with trio",
+    "language": "Python",
+    "href": "https://github.com/418Coffee/celox"
+  },
+  {
+    "name": "flux-template",
+    "description": "An opionated cluster agnostic Flux GitOps template repository",
+    "language": "",
+    "href": "https://github.com/418Coffee/flux-template"
+  },
+  {
+    "name": "teapot",
+    "description": "A teapot implementing the Hyper Text Coffee Pot Control Protocol (HTCPCP) as per RFC 2324",
+    "language": "C++",
+    "href": "https://github.com/418Coffee/teapot"
+  },
+  {
+    "name": "life",
+    "description": "A minimal implementation of Conway's Game of Life",
+    "language": "Go",
+    "href": "https://github.com/418Coffee/life"
+  },
+  {
+    "name": "caesar-salad",
+    "description": "A tool to automatically break shift ciphers using frequency analysis",
+    "language": "V",
+    "href": "https://github.com/418Coffee/caesar-salad"
+  },
+  {
+    "contributed": true,
+    "name": "rueidis",
+    "description": "A fast Golang Redis client that supports Client Side Caching, Auto Pipelining, Generics OM, RedisJSON, RedisBloom, RediSearch, etc.",
+    "language": "Go",
+    "href": "https://github.com/redis/rueidis"
+  },
+  {
+    "contributed": true,
+    "name": "lambda",
+    "description": "Minecraft utility mod coded in Kotlin",
+    "language": "Kotlin",
+    "href": "https://github.com/lambda-client/lambda"
+  }
+]

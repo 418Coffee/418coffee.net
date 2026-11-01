@@ -1,0 +1,36 @@
+[
+  {
+    "imageSrc": "/images/freebieflow.jpg",
+    "name": "FreebieFlow (Joylink)",
+    "description": "Amazon Automation",
+    "time": "2024-2025",
+    "role": "Software Engineer",
+    "experience": "Expanded distributed scrapers for Amazon products and promo codes. Helped build a platform connecting influencers with merchants for Amazon affiliate deeplink generation."
+  },
+  {
+    "imageSrc": "/images/arc-aio.webp",
+    "name": "ARC AIO",
+    "description": "Retail Automation",
+    "time": "2020-2022",
+    "role": "Founder & Developer",
+    "experience": "Solely built and managed all infrastructure of my private retail automation application. Mainly used to purchase hype sneakers during the 2020-2021 pandemic. Roughly €1,000,000 worth of items were bought using ARC AIO."
+  },
+  {
+    "imageSrc": "/images/fleek-framework.jpg",
+    "href": "https://twitter.com/FleekFramework",
+    "name": "Fleek Framework",
+    "description": "Retail Automation",
+    "time": "2020-2021",
+    "role": "Software Engineer",
+    "experience": "I developed custom low-level implementations and features of networking protocols, gave consultation on application security and helped expand upon core features."
+  },
+  {
+    "imageSrc": "/images/rootlabz.jpg",
+    "href": "https://twitter.com/rootlabz",
+    "name": "ROOTLABz",
+    "description": "Retail Automation",
+    "time": "2020-2020",
+    "role": "Software Developer",
+    "experience": "I reverse engineered anti-bot protections and developed a tailored API for accessing protected websites. I also maintaned and provisioned several core features."
+  }
+]
